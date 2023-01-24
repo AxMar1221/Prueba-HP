@@ -1,28 +1,34 @@
 
-
 export const Card = ( props ) => {
     const {
+        charater,
         status,
         category,
         image,
         name,
         dateOfBirth,
         gender,
-        eyeColor,
-        hairColor
+        eyeColuor,
+        hairColuor,
+        saveFavorite
     } = props;
+
   return (
     <>
     <div>
+        <button onClick={() => saveFavorite( charater ) }>Agregar</button>
+        <div>
+          <img src={ image } alt={ name } />
+        </div>
         <p>
             { status }
             { category }
         </p>
-        <img src={ image } alt={ name } />
+        <p> { name } </p>
         <p> { dateOfBirth } </p>
         <p> { gender } </p>
-        <p> { eyeColor } </p>
-        <p> { hairColor } </p>
+        <p> { eyeColuor } </p>
+        <p> { hairColuor } </p>
     </div>
 </>
   )
