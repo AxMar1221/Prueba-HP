@@ -8,8 +8,8 @@ export const Card = ( props ) => {
         name,
         dateOfBirth,
         gender,
-        eyecColor,
-        haircolor
+        eyeColor,
+        hairColor
     } = props;
   return (
     <>
@@ -21,8 +21,8 @@ export const Card = ( props ) => {
         <img src={ image } alt={ name } />
         <p> { dateOfBirth } </p>
         <p> { gender } </p>
-        <p> { eyecColor } </p>
-        <p> { haircolor } </p>
+        <p> { eyeColor } </p>
+        <p> { hairColor } </p>
     </div>
 </>
   )
